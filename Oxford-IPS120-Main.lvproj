@@ -10,43 +10,21 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="IPS Ctrl Persistent Heater.vi" Type="VI" URL="../IPS120 - SubVIs/IPS Ctrl Persistent Heater.vi"/>
+		<Item Name="IPS Examine Status.vi" Type="VI" URL="../IPS120 - SubVIs/IPS Examine Status.vi"/>
+		<Item Name="IPS Get Status.vi" Type="VI" URL="../IPS120 - SubVIs/IPS Get Status.vi"/>
 		<Item Name="IPS Initialize_Remote Unlocked.vi" Type="VI" URL="../IPS120 - SubVIs/IPS Initialize_Remote Unlocked.vi"/>
 		<Item Name="IPS Read Field Sweep Rate.vi" Type="VI" URL="../IPS120 - SubVIs/IPS Read Field Sweep Rate.vi"/>
+		<Item Name="IPS120_GoToField.vi" Type="VI" URL="../IPS120_GoToField.vi"/>
 		<Item Name="Oxford-IPS120-Main.vi" Type="VI" URL="../Oxford-IPS120-Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="instr.lib" Type="Folder">
-				<Item Name="Build SCPI Command.vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Private/VIs/Utilities/Build SCPI Command.vi"/>
-				<Item Name="Close.vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/API/Close.vi"/>
-				<Item Name="Command Verbs.ctl" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Private/Controls/Command Verbs.ctl"/>
-				<Item Name="Configuration (Read).vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/API/Configuration (Read).vi"/>
-				<Item Name="Current (Read).vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Libraries/Magnet/Signals/Read/Current (Read).vi"/>
-				<Item Name="ISOBus Address.ctl" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Controls/ISOBus Address.ctl"/>
-				<Item Name="Open Device.vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Libraries/System/Open/Open Device.vi"/>
-				<Item Name="Open Level Meter Device.vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Libraries/Level Meter/Open/Open Level Meter Device.vi"/>
-				<Item Name="Open Magnet Device.vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Libraries/Magnet/Open/Open Magnet Device.vi"/>
-				<Item Name="Open Temperature Device.vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Libraries/Temperature/Open/Open Temperature Device.vi"/>
-				<Item Name="Open.vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/API/Open.vi"/>
-				<Item Name="Persistant Current (Read).vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Libraries/Magnet/Signals/Read/Persistant Current (Read).vi"/>
-				<Item Name="PSU Action Status (Set).vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Libraries/Magnet/Configuration/Set/PSU Action Status (Set).vi"/>
-				<Item Name="PSU Actions.ctl" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Libraries/Magnet/Controls/PSU Actions.ctl"/>
-				<Item Name="Set (DBL).vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Private/VIs/Set (DBL).vi"/>
-				<Item Name="Set (Str).vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Private/VIs/Set (Str).vi"/>
-				<Item Name="Signals (Read).vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/API/Signals (Read).vi"/>
-				<Item Name="Signals (Set).vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/API/Signals (Set).vi"/>
-				<Item Name="Switch Heater No Check (Set).vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Libraries/Magnet/Signals/Set/Switch Heater No Check (Set).vi"/>
-				<Item Name="Switch Heater Status (Read).vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Libraries/Magnet/Signals/Read/Switch Heater Status (Read).vi"/>
-				<Item Name="Switch Heater.ctl" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Libraries/Magnet/Controls/Switch Heater.ctl"/>
-				<Item Name="Target Field (Set).vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Libraries/Magnet/Signals/Set/Target Field (Set).vi"/>
-				<Item Name="Target Field Rate (Set).vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Libraries/Magnet/Signals/Set/Target Field Rate (Set).vi"/>
-				<Item Name="Time (Read).vi" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Libraries/System/Read/Time (Read).vi"/>
-				<Item Name="Unit String.ctl" Type="VI" URL="/&lt;instrlib&gt;/Mercury iXX/Public/Controls/Unit String.ctl"/>
-			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Clear All Errors__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Clear All Errors__ogtk.vi"/>
 				<Item Name="Filter Error Codes (Array)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Filter Error Codes (Array)__ogtk.vi"/>
 				<Item Name="Filter Error Codes (Scalar)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Filter Error Codes (Scalar)__ogtk.vi"/>
 				<Item Name="Filter Error Codes__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Filter Error Codes__ogtk.vi"/>
 				<Item Name="Filtered Error Details - Cluster__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Filtered Error Details - Cluster__ogtk.ctl"/>
+				<Item Name="Wait (ms)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/time/time.llb/Wait (ms)__ogtk.vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
@@ -88,16 +66,20 @@
 				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="FGV - Attocube Remote.vi" Type="VI" URL="../../attocube/FGV/FGV - Attocube Remote.vi"/>
+			<Item Name="FGV_PSP - IPS120 Action Status.vi" Type="VI" URL="../IPS120 - FGV/FGV_PSP - IPS120 Action Status.vi"/>
 			<Item Name="FGV_PSP - IPS120 Actions.vi" Type="VI" URL="../IPS120 - FGV/FGV_PSP - IPS120 Actions.vi"/>
 			<Item Name="FGV_PSP - IPS120 Remote.vi" Type="VI" URL="../IPS120 - FGV/FGV_PSP - IPS120 Remote.vi"/>
 			<Item Name="FGV_PSP - IPS120 Status.vi" Type="VI" URL="../IPS120 - FGV/FGV_PSP - IPS120 Status.vi"/>
-			<Item Name="FGV_PSP - IPS120 Targets.vi" Type="VI" URL="../IPS120 - FGV/FGV_PSP - IPS120 Targets.vi"/>
+			<Item Name="FGV_PSP - Mercury Targets.vi" Type="VI" URL="../Mercury - FGV/FGV_PSP - Mercury Targets.vi"/>
+			<Item Name="IPS Read Magnet Current.vi" Type="VI" URL="../IPS120 - SubVIs/IPS Read Magnet Current.vi"/>
 			<Item Name="IPS Read Magnet Field.vi" Type="VI" URL="../IPS120 - SubVIs/IPS Read Magnet Field.vi"/>
 			<Item Name="IPS Read PS Current.vi" Type="VI" URL="../IPS120 - SubVIs/IPS Read PS Current.vi"/>
 			<Item Name="IPS Read PS Field.vi" Type="VI" URL="../IPS120 - SubVIs/IPS Read PS Field.vi"/>
 			<Item Name="IPS Read PS Voltage.vi" Type="VI" URL="../IPS120 - SubVIs/IPS Read PS Voltage.vi"/>
 			<Item Name="IPS Read Set Point Field.vi" Type="VI" URL="../IPS120 - SubVIs/IPS Read Set Point Field.vi"/>
+			<Item Name="IPS Set Field Sweep Rate.vi" Type="VI" URL="../IPS120 - SubVIs/IPS Set Field Sweep Rate.vi"/>
+			<Item Name="IPS Set Target Field.vi" Type="VI" URL="../IPS120 - SubVIs/IPS Set Target Field.vi"/>
+			<Item Name="IPS120_GoToField_SubVI.vi" Type="VI" URL="../IPS120_GoToField_SubVI.vi"/>
 			<Item Name="IPS120_to_DSC.vi" Type="VI" URL="../IPS120 - SubVIs/IPS120_to_DSC.vi"/>
 			<Item Name="MNK_Dashboard_v2.vi" Type="VI" URL="../RemoteDashboard/MNK_Dashboard_v2.vi"/>
 			<Item Name="NetVarWrite_dbl.vi" Type="VI" URL="../IPS120 - SubVIs/NetVarWrite_dbl.vi"/>

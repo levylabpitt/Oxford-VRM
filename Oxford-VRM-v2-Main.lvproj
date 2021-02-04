@@ -13,8 +13,8 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="SMOs" Type="Folder">
-			<Item Name="Instrument.OxfordVRM UI.lvclass" Type="LVClass" URL="../SMOs/Instrument.Oxford1820 UI/Instrument.OxfordVRM UI.lvclass"/>
-			<Item Name="Instrument.OxfordVRM.lvclass" Type="LVClass" URL="../SMOs/Instrument.Oxford1820/Instrument.OxfordVRM.lvclass"/>
+			<Item Name="Instrument.OxfordVRM UI.lvclass" Type="LVClass" URL="../SMOs/Instrument.OxfordVRM UI/Instrument.OxfordVRM UI.lvclass"/>
+			<Item Name="Instrument.OxfordVRM.lvclass" Type="LVClass" URL="../SMOs/Instrument.OxfordVRM/Instrument.OxfordVRM.lvclass"/>
 		</Item>
 		<Item Name="Oxford-VRM-Main-Launcher.vi" Type="VI" URL="../Oxford-VRM-Main-Launcher.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -1196,6 +1196,10 @@
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Read IPS Level.vi" Type="VI" URL="../SMOs/Instrument.Oxford1820/Private/Handle Command/Read IPS Level.vi"/>
+			<Item Name="Read ITC LPF Needle Valve.vi" Type="VI" URL="../SMOs/Instrument.Oxford1820/Private/Handle Command/Read ITC LPF Needle Valve.vi"/>
+			<Item Name="Read ITC LPF Pressure.vi" Type="VI" URL="../SMOs/Instrument.Oxford1820/Private/Handle Command/Read ITC LPF Pressure.vi"/>
+			<Item Name="Read ITC Temperature.vi" Type="VI" URL="../SMOs/Instrument.OxfordVRM/Private/Handle Command/Read ITC Temperature.vi"/>
 			<Item Name="Run Tests in Active Project.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2016/project/Caraya/Run Tests in Active Project.vi"/>
 			<Item Name="shell32.dll" Type="Document" URL="shell32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>

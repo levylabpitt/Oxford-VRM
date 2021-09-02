@@ -20,8 +20,9 @@
 			<Item Name="VRM.ico" Type="Document" URL="../../build support/VRM.ico"/>
 		</Item>
 		<Item Name="SMOs" Type="Folder">
-			<Item Name="Instrument.OxfordVRM UI.lvclass" Type="LVClass" URL="../SMOs/Instrument.OxfordVRM UI/Instrument.OxfordVRM UI.lvclass"/>
+			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Instrument.OxfordVRM.lvclass" Type="LVClass" URL="../SMOs/Instrument.OxfordVRM/Instrument.OxfordVRM.lvclass"/>
+			<Item Name="Instrument.OxfordVRM UI.lvclass" Type="LVClass" URL="../SMOs/Instrument.OxfordVRM UI/Instrument.OxfordVRM UI.lvclass"/>
 		</Item>
 		<Item Name="vrm comm test" Type="Folder">
 			<Item Name="VRM_query.vi" Type="VI" URL="../../vrm comm test/VRM_query.vi"/>

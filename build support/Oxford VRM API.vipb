@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-02-06 11:07:37" Modified_Date="2022-04-21 14:33:11" Creator="Patrick Irvin" Comments="" ID="5eae57348eba0dbfaf5636d7807ebd31">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-02-06 11:07:37" Modified_Date="2022-05-23 21:57:50" Creator="Patrick Irvin" Comments="" ID="d7a8600cfbb776846557de9fe73f7609">
   <Library_General_Settings>
     <Package_File_Name>Levylab_lib_Oxford_VRM_API</Package_File_Name>
-    <Library_Version>1.6.4.2</Library_Version>
+    <Library_Version>1.6.5.1</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\builds\Package</Library_Output_Folder>
@@ -34,11 +34,7 @@
       <Copyright/>
       <Packager/>
       <URL/>
-      <Release_Notes>- Update to Instrument Framework v1.11.3.2 (fixes issues with PGSQL logging)
-- Change Get Magnet.vi to directly ask SMO for value (backup to asking PGSQL)
-- Add Get Magnet Vector Field API
-- Change UI from 1.0 to 2.0 s getAll timout
-- Minor changes to Handle Command variant to string</Release_Notes>
+      <Release_Notes>- update to Instrument Framework v1.12</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -258,7 +254,7 @@
         <Path>..\src\SMOs\Instrument.OxfordVRM\API\Get Magnet Vector Field.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>BBC635F06522E80FA5356DEB7267951B</GUID>
+      <GUID>481D44AC1C1E33E79EA0322C54DF36F4</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

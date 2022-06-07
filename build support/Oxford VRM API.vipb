@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-02-06 11:07:37" Modified_Date="2022-06-01 11:25:48" Creator="Patrick Irvin" Comments="" ID="22aae8df5d3bad3db5fb5d0e17a001a1">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-02-06 11:07:37" Modified_Date="2022-06-07 19:27:01" Creator="Patrick Irvin" Comments="" ID="b765f6d0f78339421cb8772a6a09144c">
   <Library_General_Settings>
     <Package_File_Name>Levylab_lib_Oxford_VRM_API</Package_File_Name>
-    <Library_Version>1.6.5.4</Library_Version>
+    <Library_Version>1.6.6.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\builds\Package</Library_Output_Folder>
@@ -17,7 +17,7 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
-      <Additional_External_Dependencies>levylab_lib_levylab_instruments &gt;=1.11.3.2</Additional_External_Dependencies>
+      <Additional_External_Dependencies>levylab_lib_levylab_instruments &gt;=1.12.1.1</Additional_External_Dependencies>
     </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
@@ -34,8 +34,7 @@
       <Copyright/>
       <Packager/>
       <URL/>
-      <Release_Notes>- Update to Instrument Framework v1.12
-- UI improvements</Release_Notes>
+      <Release_Notes>- Issue #4: Fix issue with power suppy enumeration</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -255,7 +254,7 @@
         <Path>..\src\SMOs\Instrument.OxfordVRM\API\Get Magnet Vector Field.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F9CF679EFB7A322E362C0CD53EA046D4</GUID>
+      <GUID>4BB98990EA59A99E24E229BB91841BB7</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

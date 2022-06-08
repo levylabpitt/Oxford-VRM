@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-02-06 11:07:37" Modified_Date="2022-06-07 22:24:28" Creator="Patrick Irvin" Comments="" ID="e7555ef6b6a48cd0144e05c163984838">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-02-06 11:07:37" Modified_Date="2022-06-08 19:13:49" Creator="Patrick Irvin" Comments="" ID="bce818d7e772d2b5efefc53f82135aae">
   <Library_General_Settings>
     <Package_File_Name>Levylab_lib_Oxford_VRM_API</Package_File_Name>
-    <Library_Version>1.6.6.3</Library_Version>
+    <Library_Version>1.6.6.4</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\builds\Package</Library_Output_Folder>
@@ -255,7 +255,7 @@
         <Path>..\src\SMOs\Instrument.OxfordVRM\API\Get Magnet Vector Field.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3E3BA547DE41C7B544725FF996D7ACB0</GUID>
+      <GUID>4D217F536D8DD62CE36BFDA0F5AF7EB8</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-02-06 11:07:37" Modified_Date="2022-06-07 19:27:01" Creator="Patrick Irvin" Comments="" ID="b765f6d0f78339421cb8772a6a09144c">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-02-06 11:07:37" Modified_Date="2022-06-07 19:39:43" Creator="Patrick Irvin" Comments="" ID="0e7a165a5f2c8560ce2059f8c3f44f3e">
   <Library_General_Settings>
     <Package_File_Name>Levylab_lib_Oxford_VRM_API</Package_File_Name>
     <Library_Version>1.6.6.2</Library_Version>
@@ -34,7 +34,8 @@
       <Copyright/>
       <Packager/>
       <URL/>
-      <Release_Notes>- Issue #4: Fix issue with power suppy enumeration</Release_Notes>
+      <Release_Notes>- Update to Instrument Framework v1.12.1
+- Issue #4: Fix issue with power suppy enumeration</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -254,7 +255,7 @@
         <Path>..\src\SMOs\Instrument.OxfordVRM\API\Get Magnet Vector Field.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4BB98990EA59A99E24E229BB91841BB7</GUID>
+      <GUID>BC82EDC97D53BFCEE2F6FE136102C3A2</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

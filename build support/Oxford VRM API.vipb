@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-02-06 11:07:37" Modified_Date="2022-08-31 23:20:58" Creator="Patrick Irvin" Comments="" ID="9f601e3fe9d46a84b18c3798d9846b95">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-02-06 11:07:37" Modified_Date="2022-10-14 14:10:15" Creator="Patrick Irvin" Comments="" ID="e844d813b041e8fad6fae6704103c44d">
   <Library_General_Settings>
     <Package_File_Name>Levylab_lib_Oxford_VRM_API</Package_File_Name>
-    <Library_Version>1.6.7.2</Library_Version>
+    <Library_Version>1.6.7.3</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\builds\Package</Library_Output_Folder>
@@ -34,7 +34,8 @@
       <Copyright/>
       <Packager/>
       <URL/>
-      <Release_Notes>- Update to Instrument Framework v1.12.3</Release_Notes>
+      <Release_Notes>- Update to Instrument Framework v1.12.3
+- Change UI's getAll to use send message to process (and not wait for response)</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -254,7 +255,7 @@
         <Path>..\src\SMOs\Instrument.OxfordVRM\API\Get Magnet Vector Field.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6831A23CB7526EEBD6BD1B0E930B42DF</GUID>
+      <GUID>F27876435D03C4489E3A049E97D61946</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

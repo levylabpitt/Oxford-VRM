@@ -17,8 +17,9 @@
 			<Item Name="Oxford VRM API.vipb" Type="Document" URL="../../build support/Oxford VRM API.vipb"/>
 			<Item Name="Oxford VRM API.vipc" Type="Document" URL="../../build support/Oxford VRM API.vipc"/>
 			<Item Name="Post-Build Custom Action.vi" Type="VI" URL="../../build support/Post-Build Custom Action.vi"/>
-			<Item Name="Unzip-Mercury-iXX.vi" Type="VI" URL="../../build support/Unzip-Mercury-iXX.vi"/>
 			<Item Name="VRM Build.vi" Type="VI" URL="../../build support/VRM Build.vi"/>
+			<Item Name="Post-Install Custom Action.vi" Type="VI" URL="../../build support/Post-Install Custom Action.vi"/>
+			<Item Name="Unzip-Mercury-iXX.vi" Type="VI" URL="../../build support/Unzip-Mercury-iXX.vi"/>
 			<Item Name="VRM.ico" Type="Document" URL="../../build support/VRM.ico"/>
 		</Item>
 		<Item Name="vrm comm test" Type="Folder">

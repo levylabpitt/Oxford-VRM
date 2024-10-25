@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-02-06 11:07:37" Modified_Date="2023-03-13 17:15:40" Creator="Patrick Irvin" Comments="" ID="261cf25466584ba4b380a40994b960c1">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-02-06 11:07:37" Modified_Date="2024-10-24 17:27:15" Creator="Patrick Irvin" Comments="" ID="686c176c4eb985f6a47463d5c44ffa12">
   <Library_General_Settings>
     <Package_File_Name>Levylab_lib_Oxford_VRM_API</Package_File_Name>
-    <Library_Version>1.6.8.2</Library_Version>
+    <Library_Version>1.7.0.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\builds\Package</Library_Output_Folder>
@@ -34,9 +34,9 @@
       <Copyright/>
       <Packager/>
       <URL/>
-      <Release_Notes>Fixes:
-- update to Instrument Framework v1.12.6
-- Change \approx tolerance from 0.005 to 0.00005</Release_Notes>
+      <Release_Notes>[1.7.0]
+- update to Instrument Framework v1.13.0.10
+- Mercury drivers are included</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -97,12 +97,24 @@
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
         <Path/>
       </QuickDrop_Plugins>
+      <Additional_Destination>
+        <Name>instr.lib</Name>
+        <LLB>false</LLB>
+        <Preserve_Hierarchy>true</Preserve_Hierarchy>
+        <Path>&lt;instr.lib&gt;</Path>
+      </Additional_Destination>
     </Destinations>
     <Source_Files>
       <Destination_Overrides>
         <Path>.</Path>
         <Destination>0</Destination>
         <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>Mercury iXX.zip</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Password_Overrides>
@@ -171,6 +183,7 @@
       <close_labview_before_install>false</close_labview_before_install>
       <restart_labview_after_install>false</restart_labview_after_install>
       <skip_mass_compile_after_install>false</skip_mass_compile_after_install>
+      <install_into_global_environment>false</install_into_global_environment>
     </LabVIEW>
     <VI_Docs>
       <Edit_VI_Description>false</Edit_VI_Description>
@@ -256,7 +269,7 @@
         <Path>..\src\SMOs\Instrument.OxfordVRM\API\Get Magnet Vector Field.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C2F7774FC0024A27687EE21EF6BD800E</GUID>
+      <GUID>61EEE9C70A2987BE7A65715DFE3BC42F</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

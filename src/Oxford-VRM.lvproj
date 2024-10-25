@@ -17,8 +17,9 @@
 			<Item Name="Oxford VRM API.vipb" Type="Document" URL="../../build support/Oxford VRM API.vipb"/>
 			<Item Name="Oxford VRM API.vipc" Type="Document" URL="../../build support/Oxford VRM API.vipc"/>
 			<Item Name="Post-Build Custom Action.vi" Type="VI" URL="../../build support/Post-Build Custom Action.vi"/>
-			<Item Name="Unzip-Mercury-iXX.vi" Type="VI" URL="../../build support/Unzip-Mercury-iXX.vi"/>
 			<Item Name="VRM Build.vi" Type="VI" URL="../../build support/VRM Build.vi"/>
+			<Item Name="Post-Install Custom Action.vi" Type="VI" URL="../../build support/Post-Install Custom Action.vi"/>
+			<Item Name="Unzip-Mercury-iXX.vi" Type="VI" URL="../../build support/Unzip-Mercury-iXX.vi"/>
 			<Item Name="VRM.ico" Type="Document" URL="../../build support/VRM.ico"/>
 		</Item>
 		<Item Name="vrm comm test" Type="Folder">
@@ -1624,7 +1625,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{9A69ABFA-6A47-434D-BAA6-D02AD723B929}</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">7</Property>
 				<Property Name="Destination[0].destName" Type="Str">Oxford-VRM.exe</Property>

@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-02-06 11:07:37" Modified_Date="2024-10-28 09:32:00" Creator="Patrick Irvin" Comments="" ID="42524a7853a81e7558f4f3fbaaa9c318">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-02-06 11:07:37" Modified_Date="2025-03-31 13:32:03" Creator="Patrick Irvin" Comments="" ID="9955f12b8d093aeee1cfca7133ea0949">
   <Library_General_Settings>
     <Package_File_Name>Levylab_lib_Oxford_VRM_API</Package_File_Name>
     <Library_Version>1.7.0.5</Library_Version>
@@ -17,7 +17,7 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
-      <Additional_External_Dependencies>levylab_lib_levylab_instruments &gt;=1.12.3.2</Additional_External_Dependencies>
+      <Additional_External_Dependencies>levylab_lib_levylab_instruments &gt;=1.13.0.10</Additional_External_Dependencies>
     </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
@@ -35,8 +35,7 @@
       <Packager/>
       <URL/>
       <Release_Notes>[1.7.0]
-- update to Instrument Framework v1.13.0.10
-- Mercury drivers are included</Release_Notes>
+- Include Mercury drivers in a different way (do not unzip inside instr.lib)</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -112,7 +111,7 @@
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>Mercury iXX.zip</Path>
+        <Path>Mercury iXX</Path>
         <Destination>0</Destination>
         <Additional_Destination>true</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
@@ -269,7 +268,7 @@
         <Path>..\src\SMOs\Instrument.OxfordVRM\API\Get Magnet Vector Field.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6211E20F27590B603C90B3FCF9C9F849</GUID>
+      <GUID>B9B7CA1DC4C99245DCB96A0E8F6CB5AF</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

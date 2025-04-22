@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-02-06 11:07:37" Modified_Date="2024-10-28 14:09:07" Creator="Patrick Irvin" Comments="" ID="fc58107d6ee04ef836dfc235a103f457">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2020-02-06 11:07:37" Modified_Date="2025-04-02 11:30:46" Creator="Patrick Irvin" Comments="" ID="08d03dcc0cd0eba800f1fc0c9649362f">
   <Library_General_Settings>
     <Package_File_Name>Levylab_lib_Oxford_VRM_API</Package_File_Name>
-    <Library_Version>1.7.1.1</Library_Version>
+    <Library_Version>1.7.3.10</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\builds\Package</Library_Output_Folder>
@@ -17,7 +17,8 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
-      <Additional_External_Dependencies>levylab_lib_levylab_instruments =1.13.0.10</Additional_External_Dependencies>
+      <Additional_External_Dependencies>levylab_lib_levylab_instruments &gt;=1.13.0.10</Additional_External_Dependencies>
+      <Additional_External_Dependencies>oxford_lib_mercury_ixx &gt;=2.0.0.6</Additional_External_Dependencies>
     </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
@@ -34,8 +35,8 @@
       <Copyright/>
       <Packager/>
       <URL/>
-      <Release_Notes>[1.7.1]
-- Mercury drivers are included as Mercury-iXX package depedency</Release_Notes>
+      <Release_Notes>[1.7.3]
+- Include Mercury iXX drivers as package dependency (Mercury iXX v2.0.0.6)</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -97,10 +98,10 @@
         <Path/>
       </QuickDrop_Plugins>
       <Additional_Destination>
-        <Name>instr.lib</Name>
+        <Name>temp</Name>
         <LLB>false</LLB>
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
-        <Path>&lt;instr.lib&gt;</Path>
+        <Path>&lt;OS User Temporary&gt;\Mercury iXX</Path>
       </Additional_Destination>
     </Destinations>
     <Source_Files>
@@ -120,6 +121,9 @@
         <Namespace_Type>Prefix</Namespace_Type>
         <Namespace/>
       </Namespace_Overrides>
+      <Place_Folder_Contents>
+        <Path>temp (install)</Path>
+      </Place_Folder_Contents>
     </Source_Files>
     <License_Agreement_Filepath>..\LICENSE</License_Agreement_Filepath>
     <Licensing_and_Activation>
@@ -262,7 +266,7 @@
         <Path>..\src\SMOs\Instrument.OxfordVRM\API\Get Magnet Vector Field.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>623AFEBF5ED924C62655C3D10EE7DFAA</GUID>
+      <GUID>E1F249E7D02847E67A0EF0E39ED6EB4D</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

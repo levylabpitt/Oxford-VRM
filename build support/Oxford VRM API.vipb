@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2020-02-06 11:07:37" Modified_Date="2025-04-30 23:10:34" Creator="Patrick Irvin" Comments="" ID="e6968d786db830b568aaa3811cdf4103">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2020-02-06 11:07:37" Modified_Date="2025-05-01 13:11:13" Creator="Patrick Irvin" Comments="" ID="97a45c0b8e954b913790685c1032e6f2">
   <Library_General_Settings>
     <Package_File_Name>Levylab_lib_Oxford_VRM_API</Package_File_Name>
-    <Library_Version>1.8.0.10</Library_Version>
+    <Library_Version>1.8.0.11</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\builds\Package</Library_Output_Folder>
@@ -35,7 +35,7 @@
       <Copyright/>
       <Packager/>
       <URL/>
-      <Release_Notes>[1.8.0]]
+      <Release_Notes>[1.8.0]
 - build 64 bit exe
 - #6 move hardware control into child process
 - #11 Instrument Framework 1.15 / SMO 1.4</Release_Notes>
@@ -296,7 +296,7 @@
         <Path>..\src\Instrument.OxfordVRM\API\Close.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A7D29A0B7AF0F74E2F6000AB2463C799</GUID>
+      <GUID>77B9CD680FC5A5E454538A7444E36E48</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

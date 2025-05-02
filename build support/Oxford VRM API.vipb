@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2020-02-06 11:07:37" Modified_Date="2025-05-02 06:09:18" Creator="Patrick Irvin" Comments="" ID="333ff13070fa420641dd29f384ea86d3">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2020-02-06 11:07:37" Modified_Date="2025-05-02 06:31:29" Creator="Patrick Irvin" Comments="" ID="90c98915185e38fbe071fca8a40feb48">
   <Library_General_Settings>
     <Package_File_Name>Levylab_lib_Oxford_VRM_API</Package_File_Name>
-    <Library_Version>1.8.0.11</Library_Version>
+    <Library_Version>1.8.0.12</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\builds\Package</Library_Output_Folder>
@@ -296,7 +296,7 @@
         <Path>..\src\Instrument.OxfordVRM\API\Close.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CD3B5807E78410EE3466854A0FAE55F0</GUID>
+      <GUID>DC25BA186B4C108D347B8CBDBA3F0ACF</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

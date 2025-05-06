@@ -19,6 +19,7 @@
 			<Item Name="Post-Build Custom Action.vi" Type="VI" URL="../build support/Post-Build Custom Action.vi"/>
 			<Item Name="VRM Build.vi" Type="VI" URL="../build support/VRM Build.vi"/>
 			<Item Name="VRM.ico" Type="Document" URL="../build support/VRM.ico"/>
+			<Item Name="VRM-64.ico" Type="Document" URL="../build support/VRM-64.ico"/>
 		</Item>
 		<Item Name="vrm comm test" Type="Folder">
 			<Item Name="VRM_query.vi" Type="VI" URL="../tests/VRM_query.vi"/>
@@ -1580,9 +1581,9 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/Application/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/build support/VRM.ico</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/build support/VRM-64.ico</Property>
 				<Property Name="Exe_VardepDeployAtStartup" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{7F072641-A595-46D5-B13F-998427B33AA5}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{069EDEC6-EA07-423D-B372-4E8CDC2E4DEE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Instrument.OxfordVRM.lvclass/Oxford-VRM-Main-Launcher.vi</Property>

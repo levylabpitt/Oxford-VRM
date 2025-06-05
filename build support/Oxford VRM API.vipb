@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2020-02-06 11:07:37" Modified_Date="2025-06-05 08:26:47" Creator="Patrick Irvin" Comments="" ID="5cf1f3bd5875b5019a10dff7f61402d2">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2020-02-06 11:07:37" Modified_Date="2025-06-05 08:52:26" Creator="Patrick Irvin" Comments="" ID="ec156babb90300ab446770c0b2117a58">
   <Library_General_Settings>
     <Package_File_Name>Levylab_lib_Oxford_VRM_API</Package_File_Name>
-    <Library_Version>1.8.3.15</Library_Version>
+    <Library_Version>1.8.3.16</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\builds\Package</Library_Output_Folder>
@@ -295,7 +295,7 @@ change getMagnetVector to not open when called</Release_Notes>
         <Path>..\src\Instrument.OxfordVRM\API\Close.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>1A9823CFBADE02C4482B14329B7642C2</GUID>
+      <GUID>F885FA1C71937CBE393B4580EB6F188E</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

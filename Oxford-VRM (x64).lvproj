@@ -1174,7 +1174,6 @@
 				<Item Name="RemoteControl.ZMQ.lvlib" Type="Library" URL="/&lt;userlib&gt;/LevyLab/RemoteControl.ZMQ/RemoteControl.ZMQ.lvlib"/>
 				<Item Name="Current VI&apos;s Path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Current VI&apos;s Path__ogtk.vi"/>
 				<Item Name="PostBuildSupport.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/LevyLab/Build Support/PostBuildSupport/PostBuildSupport.lvclass"/>
-				<Item Name="ProgressBar.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/LevyLab/Build Support/ProgressBar/ProgressBar.lvclass"/>
 				<Item Name="MGI Create Directory Chain Behavior Enum.ctl" Type="VI" URL="/&lt;userlib&gt;/_MGI/File/MGI Create Directory Chain Behavior Enum.ctl"/>
 				<Item Name="MGI Create Directory Chain.vi" Type="VI" URL="/&lt;userlib&gt;/_MGI/File/MGI Create Directory Chain.vi"/>
 				<Item Name="Build.lvlib" Type="Library" URL="/&lt;userlib&gt;/LevyLab/Build Support/Build/Build.lvlib"/>
@@ -1425,6 +1424,7 @@
 				<Item Name="Physical Units__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Physical Units__ogtk.ctl"/>
 				<Item Name="Get Physical Units from TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Physical Units from TD__ogtk.vi"/>
 				<Item Name="Get TDEnum from TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get TDEnum from TD__ogtk.vi"/>
+				<Item Name="ProgressBar.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/LevyLab/Progress Bar/ProgressBar/ProgressBar.lvclass"/>
 			</Item>
 			<Item Name="lvStorage.dll" Type="Document" URL="lvStorage.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>

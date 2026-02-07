@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2020-02-06 11:07:37" Modified_Date="2026-02-05 23:57:07" Creator="Patrick Irvin" Comments="" ID="0e89ba4b9604f453a2bd357e22dc5c79">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2020-02-06 11:07:37" Modified_Date="2026-02-07 09:14:55" Creator="Patrick Irvin" Comments="" ID="d4538fa4488a13a370b884163acba8ad">
   <Library_General_Settings>
     <Package_File_Name>Levylab_lib_Oxford_VRM_API</Package_File_Name>
-    <Library_Version>1.10.1.23</Library_Version>
+    <Library_Version>1.10.2.24</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\builds\Package</Library_Output_Folder>
@@ -35,8 +35,8 @@
       <Copyright/>
       <Packager/>
       <URL/>
-      <Release_Notes>[1.10.1]
-- build with pgsql/1.12.0.14 (improve database connection management)</Release_Notes>
+      <Release_Notes>[1.10.2]
+- build with pgsql/3.12.1.15 (hotfix for connection key)</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -322,7 +322,7 @@
         <Path>..\src\Instrument.OxfordVRM\API\getMagnetVectorTarget.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F701463B6235587442734A68B3701E99</GUID>
+      <GUID>BFF4620ABA941C76FE93DC634EFBD4C2</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

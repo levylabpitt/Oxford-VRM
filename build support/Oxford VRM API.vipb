@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2020-02-06 11:07:37" Modified_Date="2026-02-06 16:06:46" Creator="Patrick Irvin" Comments="" ID="beb3dfdaba93a963a878d0cff0b76908">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2020-02-06 11:07:37" Modified_Date="2026-02-07 09:14:55" Creator="Patrick Irvin" Comments="" ID="d4538fa4488a13a370b884163acba8ad">
   <Library_General_Settings>
     <Package_File_Name>Levylab_lib_Oxford_VRM_API</Package_File_Name>
-    <Library_Version>1.10.2.23</Library_Version>
+    <Library_Version>1.10.2.24</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..\builds\Package</Library_Output_Folder>
@@ -322,7 +322,7 @@
         <Path>..\src\Instrument.OxfordVRM\API\getMagnetVectorTarget.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>76D4B3C29C72098AA924AEF76C2A14FF</GUID>
+      <GUID>BFF4620ABA941C76FE93DC634EFBD4C2</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

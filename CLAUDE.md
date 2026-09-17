@@ -37,10 +37,11 @@ Name dependency rebuilds `build with <Repo>/<version>` and reference this repo's
 ## Layout
 
 - `src\Instrument.OxfordVRM\Instrument.OxfordVRM.lvclass`: the driver class.
-  - `Process.vi`: the JKI state machine. Hardware states are prefixed `VRM:` (`VRM: Open`, `VRM: Close`, `VRM: GetAll`, `VRM: Hold`, `VRM: Clamp`, `VRM: RampToSet`, `VRM: RampToZero`, `VRM: SetTarget`). The process data holds the class object in an element named `SelfRef`.
+  - `Process.vi`: the JKI state machine. Hardware states are prefixed `VRM:` (`VRM: Open`, `VRM: Close`, `VRM: Reconnect`, `VRM: GetAll`, `VRM: Hold`, `VRM: Clamp`, `VRM: RampToSet`, `VRM: RampToZero`, `VRM: SetTarget`). The process data holds the class object in an element named `SelfRef`.
   - `API\`: public API (`Open`, `Close`, `getMagnet`, `setMagnet`, `getMagnetVector`, `setMagnetVector`, target getters, `AbortSequence`).
-  - `Methods (Overrides)\`: framework overrides (`Open/Close Hardware`, `Handle Command`, `Handle getAll`, `Handle setAllData`, SMO name/port/database paths, configuration file read/write, event creation).
+  - `Methods (Overrides)\`: framework overrides (`Open/Close Hardware`, `Handle Error`, `Handle Command`, `Handle getAll`, `Handle setAllData`, SMO name/port/database paths, configuration file read/write, event creation).
   - `Private\Open IPS.vi`: opens the Mercury iPS and stores the PSU device names from the catalogue.
+  - `Private\Is Connection Error.vi`: true for the VISA/Mercury error codes that mean the link is down.
   - `Private\Hardware\`: IPS reads and sets (`Read IPS All`, `Set IPS Action`, `Set IPS PSU Target`, `Ramp PSU to Target`) and `VRM.*` wrappers.
   - `Community\`: helpers (Cartesian/spherical conversion, sweep ETA, float compare, remote client).
   - `Tests\`: `Test Open Close`, `Test Open IPS`, `Test Ramp Field`, `Test Set PSU`, `Unit Test`.
@@ -56,18 +57,31 @@ Name dependency rebuilds `build with <Repo>/<version>` and reference this repo's
 ## Architecture notes
 
 - **Two copies of the object.** `Process.vi` calls the parent `Instrument` Process.vi alongside its own state machine. The parent loop runs `Handle Command`, which only forwards commands to this loop with `sendMessageToProcess`. All hardware calls happen in this loop, on its own copy of the object.
-- **Error Handler** calls JKI `Handle Error.vi` (a protected, dynamic-dispatch SMO method, so it can be overridden) with `Stop on Unhandled Error = False`, then puts the remaining states back on the queue itself. There is no separate `Macro: Post Error Handling` state.
-- **Polling:** the Timeout event queues `VRM: GetAll` every 1 s and `Data: Log` every 10 s.
+- **Error Handler** calls the `Handle Error.vi` override (JKI's is a protected, dynamic-dispatch SMO method) with `Stop on Unhandled Error = False` and bundles its `SMO out` back into `SelfRef`. Next state: `Exit` on a handling error, `Macro: Connection Lost` on a connection error, otherwise `Macro: Post Error Handling`, which re-queues the remaining states.
+- **Polling:** while connected, the Timeout event queues `VRM: GetAll` every 1 s and `Data: Log` every 10 s. While disconnected it queues nothing but `VRM: Reconnect`, and the status string reads "Not Connected".
+- **Status updates** go through `Sequence: Update Status >> <text>`. There is no `Data: Update Status` state; an unknown state name falls into `Default`, which raises error 42 ("Unhandled State").
+- **Sequences:** `Running Step = -1` means idle. `Macro: Abort Sequence` sets it to 0 with an empty sequence and lets `Macro: Run Sequence` set -1; setting -1 there directly would make Run Sequence loop forever.
+
+## Automatic reconnect (#17)
+
+Same design as Oxford-1820. The `Connection` cluster in the class private data holds `Connected?`, `Connection Error Reported?`, `Reconnection Attempts`, `Last Attempt (ms)` and `Reconnect Delay (ms)`. These fields only mean something on the `SelfRef` copy.
+
+- **Handle Error override:** reports only the first connection error of an outage (sets `Connection Error Reported?`); later ones return no error, so they take the normal path and don't reset the backoff.
+- **Open Hardware:** on success sets `Connected?`, clears the reported flag and the attempt count. On failure increments the attempts, sets the delay to `min(5000 × 2^attempts, 60000)` computed in DBL, and stores Tick Count as `Last Attempt (ms)`.
+- **Close Hardware:** sets the VISA timeout to 1000 ms (on its own error chain through Clear Errors) before `Close.vi`, and clears `Connected?`.
+- **Timeout:** queues `VRM: Reconnect` when `Tick Count − Last Attempt > Reconnect Delay`, all U32 so Tick Count rollover is harmless.
+- **Macro: Connection Lost:** sets `Last Attempt` = Tick Count and the delay to 5000. When `Core.Shutdown?`, re-queues the remaining states so exit finishes; otherwise drops them and queues `Macro: Abort Sequence`, `Sequence: Update Status >> IPS Connection Lost`, `VRM: Close`.
+- **VRM: Reconnect:** Close Hardware, Clear Errors, Open Hardware (always with a clean error). A connection error from Open is swallowed so the backoff continues; any other error is reported. Unlike `VRM: Open`, it doesn't call `Write Client Type`.
 
 ## Sharp edges (Mercury iXX library)
 
 - **Session reuse:** `Open System.vi` looks up the VISA resource in `Lookup Reference FGV.vi` and reuses a stored session instead of opening a new one. `Open IPS.vi` passes `Clear Previous Connections = True`, which closes all stored sessions first.
 - **The FGV skips on error:** it does nothing, including Clear All, if its `error in` has an error. Always call Open Hardware with a clean error input.
 - **Slow close on a dead link:** `Close.vi` runs `VISA Clear` before `VISA Close` with the 10 s timeout that `Open System.vi` hardcodes.
-- **No automatic reconnect:** after a network drop the driver keeps polling a dead session (10 s timeout per poll) and never reopens it. The fix designed and implemented for Oxford-1820 is written up in #17.
+- **Reconnecting needs a closed session:** reopening without closing gets the dead session back from the FGV. `VRM: Reconnect` always runs Close Hardware first; see Automatic reconnect above.
 
 ## Open issues worth knowing
 
-- #17: automatic reconnect after a lost connection (full recipe, state by state).
+- #17: automatic reconnect after a lost connection. Implemented; the hardware test plan in the issue (pull the cable, reconnect, exit while disconnected, restart) is still to run.
 - #16: verify HELP returns only supported commands.
 - #8: gentle UI "lockout" while under remote control.
